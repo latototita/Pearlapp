@@ -13,7 +13,7 @@ def create_webview(*args):
 	wvc = WebViewClient()
 	webview.setWebViewClient(wvc)
 	activity.setContentView(webview)
-	webview.loadUrl('https://google.com')
+	webview.loadUrl('https://google.com',)
 class Wv(Widget):
 	def __init__(self, **kwargs):
 		super().__init__(**kwargs)
