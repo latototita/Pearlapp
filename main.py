@@ -17,17 +17,15 @@ def create_webview(*args):
 	activity.setContentView(webview)
 	webview.loadUrl('https://pearlmart.ml')
 
-
 class Wv(Widget):
 	def __init__(self, **kwargs):
 		super().__init__(**kwargs)
 		self.__functionstable__ = {}
 		Clock.schedule_once(create_webview, 0)
 
-
 class ServiceApp(App):
 	def build(self):
 		return Wv()
 
 if __name__ == '__main__':
-    ServiceApp().run()
+	ServiceApp().run()
