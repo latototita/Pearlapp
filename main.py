@@ -10,8 +10,8 @@ activity = autoclass('org.kivy.android.PythonActivity').mActivity
 def create_webview(*args):
 	webview = WebView(activity)
 	webview.getSettings().setJavaScriptEnabled(True)
-	wvc = WebViewClient();
-	webview.setWebViewClient(wvc);
+	wvc = WebViewClient()
+	webview.setWebViewClient(wvc)
 	activity.setContentView(webview)
 	webview.loadUrl('https://google.com')
 class Wv(Widget):
