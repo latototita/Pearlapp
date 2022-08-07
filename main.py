@@ -1,31 +1,27 @@
-import kivy
-from kivy.app import App
-from kivy.lang import Builder
-from kivy.utils import platform
 from kivy.uix.widget import Widget
-from kivy.clock import Clock
-from jnius import autoclass
-from android.runnable import run_on_ui_thread
+from kivymd.app import MDApp
+from webview import WebView
+from kivy.lang.builder import Builder
+from kivymd.uix.button import MDFlatButton
+from kivymd.uix.screen import MDScreen
 
-WebView = autoclass('android.webkit.WebView')
-WebViewClient = autoclass('android.webkit.WebViewClient')
-activity = autoclass('org.kivy.android.PythonActivity').mActivity
-class Wv(Widget):
-    def __init__(self, **kwargs):
-        super(Wv, self).__init__(**kwargs)
-        Clock.schedule_once(self.create_webview, 0)
-    @run_on_ui_thread
-    def create_webview(self, *args):
-        webview = WebView(activity)
-        webview.getSettings().setJavaScriptEnabled(True)
-        wvc = WebViewClient();
-        webview.setWebViewClient(wvc);
-        activity.setContentView(webview)
-        webview.loadUrl('http://www.google.com')                                                                                            
-class ServiceApp(App):
+Builder.load_string("""
+<MyWebView>
+    MDFlatButton:
+        text: "Push"
+        pos_hint: {"center_x": .5, "center_y": .4}
+        on_press: root.Push()
+""")
+
+class MyWebView(MDScreen):
+    def Push(self):
+        WebView("https://www.google.com")
+
+
+class MyWebApp(MDApp):
     def build(self):
-        return Wv()
+        return MyWebView()
 
 
-if __name__ == '__main__':                                                                      
-    ServiceApp().run(
+if __name__ == '__main__':
+    MyWebApp().run()
