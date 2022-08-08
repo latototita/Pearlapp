@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = kivy==2.0.0
+requirements = pyjnius,python2,kivy,sdl2_mixer,android
 
 
 # (str) Custom source folders for requirements
@@ -94,22 +94,22 @@ icon.adaptive_foreground.filename = cart.jpg
 icon.adaptive_background.filename = cart.jpg
 
 # (list) Permissions
-#android.permissions = INTERNET
+#android.permissions = INTERNET,VIBRATE,ACCESS_WIFI_STATE,CHANGE_WIFI_STATE,CHANGE_NETWORK_STATE
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-#android.api = 27
+#android.api = 23
 
 # (int) Minimum API your APK / AAB will support.
 #android.minapi = 21
 
 # (int) Android SDK version to use
-#android.sdk = 20
+#android.sdk = 24
 
 # (str) Android NDK version to use
-#android.ndk = 19b
+#android.ndk = r13
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = 21
@@ -263,7 +263,7 @@ android.ouya.icon.filename =cart.jpg
 
 # (list) The Android archs to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 # In past, was `android.arch` as we weren't supporting builds for multiple archs at the same time.
-android.archs = arm64-v8a, armeabi-v7a
+android.archs = armeabi-v7a
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
