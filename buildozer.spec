@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = Pearl-Mart
+title = PearlMart
 
 # (str) Package name
-package.name = Pearl-Mart
+package.name = PearlMart
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.kivy
