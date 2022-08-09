@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = Pearl-Mart
 
 # (str) Package name
-package.name = myapp
+package.name = Pearl-Mart
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = org.kivy
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -44,10 +44,10 @@ requirements = python3,kivy
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-#presplash.filename = %(source.dir)s/data/presplash.png
+presplash.filename = preslash.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
+icon.filename = cart.jpg
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
@@ -80,7 +80,7 @@ fullscreen = 0
 # red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
 # darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,
 # olive, purple, silver, teal.
-#android.presplash_color = #FFFFFF
+android.presplash_color = #d8373e
 
 # (string) Presplash animation using Lottie format.
 # see https://lottiefiles.com/ for examples and https://airbnb.design/lottie/
@@ -89,8 +89,8 @@ fullscreen = 0
 #android.presplash_lottie = "path/to/lottie/file.json"
 
 # (str) Adaptive icon of the application (used if Android API level is 26+ at runtime)
-#icon.adaptive_foreground.filename = %(source.dir)s/data/icon_fg.png
-#icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
+icon.adaptive_foreground.filename = cart.jpg
+icon.adaptive_background.filename = cart.jpg
 
 # (list) Permissions
 #android.permissions = INTERNET
@@ -108,7 +108,7 @@ fullscreen = 0
 #android.sdk = 20
 
 # (str) Android NDK version to use
-#android.ndk = 23b
+#android.ndk = 19b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = 21
@@ -219,13 +219,10 @@ fullscreen = 0
 #android.ouya.category = GAME
 
 # (str) Filename of OUYA Console icon. It must be a 732x412 png image.
-#android.ouya.icon.filename = %(source.dir)s/data/ouya_icon.png
+android.ouya.icon.filename =cart.jpg
 
 # (str) XML file to include as an intent filters in <activity> tag
 #android.manifest.intent_filters =
-
-# (list) Copy these files to src/main/res/xml/ (used for example with intent-filters)
-#android.res_xml = PATH_TO_FILE,
 
 # (str) launchMode to set for the main activity
 #android.manifest.launch_mode = standard
@@ -286,11 +283,8 @@ android.allow_backup = True
 # (bool) disables the compilation of py to pyc/pyo files when packaging
 # android.no-compile-pyo = True
 
-# (str) The format used to package the app for release mode (aab or apk or aar).
+# (str) The format used to package the app for release mode (aab or apk).
 # android.release_artifact = aab
-
-# (str) The format used to package the app for debug mode (apk or aar).
-# android.debug_artifact = apk
 
 #
 # Python for android (p4a) specific
@@ -332,7 +326,6 @@ android.allow_backup = True
 
 # (str) extra command line arguments to pass when invoking pythonforandroid.toolchain
 #p4a.extra_args =
-
 
 
 #
