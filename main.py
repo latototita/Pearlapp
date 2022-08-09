@@ -15,7 +15,7 @@ def create_webview(*args):
 	wvc = WebViewClient();
 	webview.setWebViewClient(wvc);
 	activity.setContentView(webview)
-	webview.loadUrl('https://ｗｗｗ.baidu.com')
+	webview.loadUrl('https://pearlmart.ml')
 
 
 class Wv(Widget):
