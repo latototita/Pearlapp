@@ -99,7 +99,7 @@ icon.adaptive_background.filename = cart.jpg
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-#android.api = 27
+android.api = 28
 
 # (int) Minimum API your APK / AAB will support.
 #android.minapi = 21
