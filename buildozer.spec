@@ -93,7 +93,7 @@ icon.adaptive_foreground.filename = cart.jpg
 icon.adaptive_background.filename = cart.jpg
 
 # (list) Permissions
-#android.permissions = INTERNET
+android.permissions = INTERNET, ACCESS_NETWORK_STATE
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
@@ -102,7 +102,7 @@ icon.adaptive_background.filename = cart.jpg
 android.api = 28
 
 # (int) Minimum API your APK / AAB will support.
-#android.minapi = 21
+android.minapi = 27
 
 # (int) Android SDK version to use
 #android.sdk = 20
@@ -187,7 +187,7 @@ android.api = 28
 #android.add_assets =
 
 # (list) Gradle dependencies to add
-android.gradle_dependencies = com.google.android.gms:play-services-auth:18.0.0
+# android.gradle_dependencies = com.google.android.gms:play-services-auth:18.0.0
 
 # (bool) Enable AndroidX support. Enable when 'android.gradle_dependencies'
 # contains an 'androidx' package, or any package from Kotlin source.
