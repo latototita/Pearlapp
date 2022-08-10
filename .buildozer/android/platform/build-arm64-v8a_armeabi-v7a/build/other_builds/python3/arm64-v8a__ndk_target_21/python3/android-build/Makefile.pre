@@ -27,18 +27,18 @@ MODLIBS=           _MODLIBS_
 
 # === Variables set by configure
 VERSION=	3.9
-srcdir=		/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_21/python3
-VPATH=		/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_21/python3
-abs_srcdir=	/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_21/python3
-abs_builddir=	/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_21/python3/android-build
+srcdir=		/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_21/python3
+VPATH=		/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_21/python3
+abs_srcdir=	/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_21/python3
+abs_builddir=	/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/python3/arm64-v8a__ndk_target_21/python3/android-build
 
 
-CC=		/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
-CXX=		/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC
+CC=		/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+CXX=		/usr/bin/ccache /home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC
 MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
-AR=		/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
-READELF=	/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf
+AR=		/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+READELF=	/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf
 SOABI=		cpython-39
 LDVERSION=	$(VERSION)$(ABIFLAGS)
 LIBPYTHON=	-lpython3.9
@@ -47,7 +47,7 @@ GITTAG=
 GITBRANCH=	
 PGO_PROF_GEN_FLAG=-fprofile-instr-generate
 PGO_PROF_USE_FLAG=-fprofile-instr-use=code.profclangd
-LLVM_PROF_MERGER=/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-profdata merge -output=code.profclangd *.profclangr
+LLVM_PROF_MERGER=/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-profdata merge -output=code.profclangd *.profclangr
 LLVM_PROF_FILE=LLVM_PROFILE_FILE="code-%p.profclangr"
 LLVM_PROF_ERR=no
 DTRACE=         
@@ -89,8 +89,8 @@ CONFIGURE_CFLAGS_NODIST= -std=c99 -Wextra -Wno-unused-result -Wno-unused-paramet
 # Use it when a linker flag should _not_ be part of the distutils LDFLAGS
 # once Python is installed (bpo-35257)
 CONFIGURE_LDFLAGS_NODIST=
-CONFIGURE_CPPFLAGS=	-DANDROID -I/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/myapp/arm64-v8a/include/python3.9 -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3 -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include/internal -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include/openssl -I/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
-CONFIGURE_LDFLAGS=	  -L/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a -L/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3/obj/local/arm64-v8a -L/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/.libs -L/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1 -L/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21
+CONFIGURE_CPPFLAGS=	-DANDROID -I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.9 -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3 -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include/internal -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include/openssl -I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+CONFIGURE_LDFLAGS=	  -L/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/Pearlmart/arm64-v8a -L/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3/obj/local/arm64-v8a -L/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/.libs -L/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1 -L/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21
 # Avoid assigning CFLAGS, LDFLAGS, etc. so users can use them on the
 # command line to append to these values without stomping the pre-set
 # values.
@@ -155,9 +155,9 @@ CONFINCLUDEPY=	$(CONFINCLUDEDIR)/python$(LDVERSION)
 # Symbols used for using shared libraries
 SHLIB_SUFFIX=	.so
 EXT_SUFFIX=	.cpython-39.so
-LDSHARED=	/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions $(PY_LDFLAGS)
-BLDSHARED=	/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions $(PY_CORE_LDFLAGS)
-LDCXXSHARED=	/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions
+LDSHARED=	/usr/bin/ccache /home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions $(PY_LDFLAGS)
+BLDSHARED=	/usr/bin/ccache /home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions $(PY_CORE_LDFLAGS)
+LDCXXSHARED=	/usr/bin/ccache /home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions
 DESTSHARED=	$(BINLIBDEST)/lib-dynload
 
 # List of exported symbols for AIX
@@ -199,9 +199,9 @@ RUNSHARED=
 ENSUREPIP=      no
 
 # OpenSSL options for setup.py so sysconfig can pick up AC_SUBST() vars.
-OPENSSL_INCLUDES=-I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include
+OPENSSL_INCLUDES=-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include
 OPENSSL_LIBS=-lssl -lcrypto
-OPENSSL_LDFLAGS=-L/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/lib
+OPENSSL_LDFLAGS=-L/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/lib
 
 # Default zoneinfo.TZPATH. Added here to expose it in sysconfig.get_config_var
 TZPATH=/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/zoneinfo:/etc/zoneinfo
@@ -213,7 +213,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--host=aarch64-linux-android' '--build=x86_64-pc-linux-gnu' '--enable-shared' '--enable-ipv6' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' '--without-ensurepip' 'ac_cv_little_endian_double=yes' '--prefix=/usr/local' '--exec-prefix=/usr/local' '--enable-loadable-sqlite-extensions' '--with-openssl=/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1' 'build_alias=x86_64-pc-linux-gnu' 'host_alias=aarch64-linux-android' 'CC=/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang' 'CFLAGS=-fPIC -DANDROID' 'LDFLAGS=  -L/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a -L/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3/obj/local/arm64-v8a -L/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/.libs -L/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1 -L/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21' 'LIBS= -lsqlite3 -lffi -lcrypto1.1 -lssl1.1 -lz' 'CPPFLAGS=-DANDROID -I/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/myapp/arm64-v8a/include/python3.9 -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3 -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include/internal -I/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include/openssl -I/home/newuser/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include' 'PKG_CONFIG_PATH=/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi'
+CONFIG_ARGS=	 '--host=aarch64-linux-android' '--build=x86_64-pc-linux-gnu' '--enable-shared' '--enable-ipv6' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' '--without-ensurepip' 'ac_cv_little_endian_double=yes' '--prefix=/usr/local' '--exec-prefix=/usr/local' '--enable-loadable-sqlite-extensions' '--with-openssl=/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1' 'build_alias=x86_64-pc-linux-gnu' 'host_alias=aarch64-linux-android' 'CC=/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang' 'CFLAGS=-fPIC -DANDROID' 'LDFLAGS=  -L/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/Pearlmart/arm64-v8a -L/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3/obj/local/arm64-v8a -L/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/.libs -L/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1 -L/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21' 'LIBS= -lsqlite3 -lffi -lcrypto1.1 -lssl1.1 -lz' 'CPPFLAGS=-DANDROID -I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.9 -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3 -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include/internal -I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include/openssl -I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include' 'PKG_CONFIG_PATH=/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi'
 
 
 # Subdirectories with code
@@ -300,7 +300,7 @@ IO_OBJS=	\
 
 ##########################################################################
 
-LIBFFI_INCLUDEDIR=	/home/newuser/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include
+LIBFFI_INCLUDEDIR=	/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include
 
 ##########################################################################
 # Parser
