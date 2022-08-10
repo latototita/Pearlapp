@@ -3,6 +3,11 @@ from jnius import autoclass
 from kivy.clock import Clock
 from android.runnable import run_on_ui_thread
 from kivy.uix.widget import Widget
+from android.permissions import request_permissions, Permission
+request_permissions([Permission.READ_EXTERNAL_STORAGE, Permission.WRITE_EXTERNAL_STORAGE, Permission.INTERNET])
+
+
+
 
 WebView = autoclass('android.webkit.WebView')
 WebViewClient = autoclass('android.webkit.WebViewClient')
@@ -15,7 +20,7 @@ def create_webview(*args):
     wvc = WebViewClient();
     webview.setWebViewClient(wvc);
     activity.setContentView(webview)
-    webview.loadUrl('https://ｗｗｗ.baidu.com')
+    webview.loadUrl('https://pearlmart.ml')
 
 
 class Wv(Widget):
