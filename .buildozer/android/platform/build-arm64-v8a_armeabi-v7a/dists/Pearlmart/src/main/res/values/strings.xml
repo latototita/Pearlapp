@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Pearlmart</string>
-    <string name="private_version">7b3c8d7933203884a32dbece7f0bd7f4d9842180</string>
+    <string name="private_version">a71dde0201ea11d1f3b28ad8c9173fae92bf6372</string>
     <string name="presplash_color">#000000</string>
     <string name="urlScheme">kivy</string>
 </resources>
