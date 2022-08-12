@@ -47,7 +47,7 @@ requirements = kivy, python3, docutils, android
 presplash.filename = preslash.png
 
 # (str) Icon of the application
-icon.filename = cart.jpg
+icon.filename = cart.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
@@ -89,8 +89,8 @@ android.presplash_color = #d8373e
 #android.presplash_lottie = "path/to/lottie/file.json"
 
 # (str) Adaptive icon of the application (used if Android API level is 26+ at runtime)
-icon.adaptive_foreground.filename = cart.jpg
-icon.adaptive_background.filename = cart.jpg
+icon.adaptive_foreground.filename = cart.png
+icon.adaptive_background.filename = cart.png
 
 # (list) Permissions
 android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
@@ -219,7 +219,7 @@ android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
 #android.ouya.category = GAME
 
 # (str) Filename of OUYA Console icon. It must be a 732x412 png image.
-android.ouya.icon.filename = cart.jpg
+android.ouya.icon.filename = cart.png
 
 # (str) XML file to include as an intent filters in <activity> tag
 #android.manifest.intent_filters =
