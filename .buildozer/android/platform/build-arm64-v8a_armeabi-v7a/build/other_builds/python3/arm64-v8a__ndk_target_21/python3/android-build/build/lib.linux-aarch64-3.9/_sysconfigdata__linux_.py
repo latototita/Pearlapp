@@ -69,6 +69,7 @@ build_time_vars = {'ABIFLAGS': '',
                 "'ac_cv_little_endian_double=yes' '--prefix=/usr/local' "
                 "'--exec-prefix=/usr/local' "
                 "'--enable-loadable-sqlite-extensions' "
+                "'--with-openssl=/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/armeabi-v7a__ndk_target_21/openssl1.1' "
                 "'--with-openssl=/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1' "
                 "'build_alias=x86_64-pc-linux-gnu' "
                 "'host_alias=aarch64-linux-android' "
@@ -110,7 +111,7 @@ build_time_vars = {'ABIFLAGS': '',
              '-I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include '
              '-DANDROID '
              '-I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include '
-             '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.7 '
+             '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.9 '
              '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3 '
              '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include '
              '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include '
@@ -757,7 +758,7 @@ build_time_vars = {'ABIFLAGS': '',
                              '-I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include '
                              '-DANDROID '
                              '-I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include '
-                             '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.7 '
+                             '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.9 '
                              '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3 '
                              '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include '
                              '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include '
@@ -794,7 +795,7 @@ build_time_vars = {'ABIFLAGS': '',
                    '-I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include '
                    '-DANDROID '
                    '-I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include '
-                   '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.7 '
+                   '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.9 '
                    '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3 '
                    '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include '
                    '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include '
@@ -825,7 +826,7 @@ build_time_vars = {'ABIFLAGS': '',
                 '-I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include '
                 '-DANDROID '
                 '-I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include '
-                '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.7 '
+                '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.9 '
                 '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3 '
                 '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include '
                 '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include '
@@ -867,7 +868,7 @@ build_time_vars = {'ABIFLAGS': '',
                         '-I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include '
                         '-DANDROID '
                         '-I/home/sammy/.buildozer/android/platform/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include '
-                        '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.7 '
+                        '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/Pearlmart/arm64-v8a/include/python3.9 '
                         '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/sqlite3/arm64-v8a__ndk_target_21/sqlite3 '
                         '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/include '
                         '-I/home/sammy/Pearlapp/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/include '
