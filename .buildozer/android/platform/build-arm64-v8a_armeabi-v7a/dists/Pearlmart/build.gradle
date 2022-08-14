@@ -39,8 +39,9 @@ android {
         jniLibs {
             useLegacyPackaging = true
         }
-        doNotStrip '**/*.so'
         
+        exclude 'lib/**/gdbserver'
+        exclude 'lib/**/gdb.setup'
 	}
 	
 
