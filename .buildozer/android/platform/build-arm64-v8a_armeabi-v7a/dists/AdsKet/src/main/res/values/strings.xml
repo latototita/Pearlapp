@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AdsKet</string>
+    <string name="private_version">3e94f7d020529987c1ec9e4060988ecaa1f936d1</string>
+    <string name="presplash_color">#FFFFFF</string>
+    <string name="urlScheme">kivy</string>
+</resources>
