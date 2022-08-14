@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = Pearlmart
+title = AdsKet
 
 # (str) Package name
-package.name = Pearlmart
+package.name = AdsKet
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.Pearl
@@ -44,10 +44,10 @@ requirements = kivy, python3, docutils, android
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = preslash.png
+presplash.filename = icon.png
 
 # (str) Icon of the application
-icon.filename = cart.png
+icon.filename = icon.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
@@ -89,8 +89,8 @@ android.presplash_color = #FFFFFF
 #android.presplash_lottie = "path/to/lottie/file.json"
 
 # (str) Adaptive icon of the application (used if Android API level is 26+ at runtime)
-icon.adaptive_foreground.filename = cart.png
-icon.adaptive_background.filename = cart.png
+icon.adaptive_foreground.filename = icon.png
+icon.adaptive_background.filename = icon.png
 
 # (list) Permissions
 android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
@@ -219,7 +219,7 @@ android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
 #android.ouya.category = GAME
 
 # (str) Filename of OUYA Console icon. It must be a 732x412 png image.
-android.ouya.icon.filename = cart.png
+android.ouya.icon.filename = icon.png
 
 # (str) XML file to include as an intent filters in <activity> tag
 #android.manifest.intent_filters =
