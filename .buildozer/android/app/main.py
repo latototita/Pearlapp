@@ -1,62 +1,37 @@
 from kivy.app import App
-from jnius import autoclass
-from kivy.clock import Clock
-from kivy.lang.builder import Builder
-from kivy.uix.screenmanager import ScreenManager, Screen
-from android.runnable import run_on_ui_thread
+ 
 from kivy.uix.widget import Widget
-from android.permissions import request_permissions, Permission
-request_permissions([Permission.READ_EXTERNAL_STORAGE, Permission.WRITE_EXTERNAL_STORAGE, Permission.INTERNET])
-
-
-
-
+from kivy.clock import Clock
+from jnius import autoclass
+from android.runnable import run_on_ui_thread
+ 
 WebView = autoclass('android.webkit.WebView')
 WebViewClient = autoclass('android.webkit.WebViewClient')
+#activity = autoclass('org.renpy.android.PythonActivity').mActivity
 activity = autoclass('org.kivy.android.PythonActivity').mActivity
-
-screen_helper = """
-
-ScreenManager:
-    NoInternetScreen:
-
-<NoInternetScreen>:
-    name: 'menu'
-    MDRectangleFlatButton:
-        text: 'Try Again'
-        pos_hint: {'center_x':0.5,'center_y':0.5}
-        on_press: root.manager.current = 'browser'
-"""
-screen = Builder.load_string(screen_helper)
-class NoInternetScreen(Screen):
-    pass
-@run_on_ui_thread
-def create_webview(*args):
-    webview = WebView(activity)
-    webview.getSettings().setJavaScriptEnabled(True)
-    wvc = WebViewClient();
-    webview.setWebViewClient(wvc);
-    activity.setContentView(webview)
-    webview.loadUrl('https://adsket.ml')
-
+ 
 class Wv(Widget):
     def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        self.__functionstable__ = {}
-        Clock.schedule_once(create_webview, 0)
-
-sm = ScreenManager()
-sm.add_widget(Wv(name='browser'))
-sm.add_widget(NoInternetScreen(name='menu'))
-
-
+        super(Wv, self).__init__(**kwargs)
+        Clock.schedule_once(self.create_webview, 0)
+ 
+@run_on_ui_thread
+def create_webview(self, *args):
+    webview = WebView(activity)
+    settings = webview.getSettings()
+    settings.setJavaScriptEnabled(True)
+    settings.setUseWideViewPort(True) # enables viewport html meta tags
+    settings.setLoadWithOverviewMode(True) # uses viewport
+    settings.setSupportZoom(True) # enables zoom
+    settings.setBuiltInZoomControls(True) # enables zoom controls
+    wvc = WebViewClient()
+    webview.setWebViewClient(wvc)
+    activity.setContentView(webview)
+    webview.loadUrl('http://beta.html5test.com')
+ 
 class ServiceApp(App):
     def build(self):
-        try:
-            return Wv()
-        except:
-            return screen
-        
-
+        return Wv()
+ 
 if __name__ == '__main__':
     ServiceApp().run()
