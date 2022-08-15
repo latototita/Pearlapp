@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = AdsKet
+title = Pearlmart
 
 # (str) Package name
-package.name = AdsKet
+package.name = Pearlmart
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.Pearl
